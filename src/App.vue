@@ -3,19 +3,19 @@
     <header>
       <h1>Attraction Swiper</h1>
     </header>
-    <swiper :attractions="attractions" @swipe="handleSwipe" />
+    <SwiperComponent :attractions="attractions" @swipe="handleSwipe" />
     <button @click="goToTop">Back to Top</button>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-import Swiper from './components/Swiper.vue';
+import SwiperComponent from './components/SwiperComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    Swiper
+    SwiperComponent
   },
   data() {
     return {
@@ -23,7 +23,7 @@ export default {
     };
   },
   created() {
-    axios.get('http://localhost:8000/api/attractions/')
+    axios.get('http://13.239.97.179:/api/attractions/')
       .then(response => {
         this.attractions = response.data;
       })
@@ -59,3 +59,10 @@ button {
   margin-top: 20px;
 }
 </style>
+
+
+
+
+
+
+

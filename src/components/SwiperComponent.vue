@@ -1,6 +1,6 @@
 <template>
   <div>
-    <tinder-card
+    <TinderCard
       v-for="(attraction, index) in attractions"
       :key="index"
       :attraction="attraction"
@@ -9,15 +9,15 @@
       <h3>{{ attraction.name }}</h3>
       <p>{{ attraction.description }}</p>
       <p>Location: {{ attraction.latitude }}, {{ attraction.longitude }}</p>
-    </tinder-card>
+i    </TinderCard>
   </div>
 </template>
 
 <script>
-import TinderCard from 'vue-tinder-card';
+import TinderCard from 'vue-tinder';
 
 export default {
-  name: 'Swiper',
+  name: 'SwiperComponent',
   components: {
     TinderCard
   },
