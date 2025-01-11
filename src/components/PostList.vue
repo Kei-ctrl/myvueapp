@@ -28,7 +28,7 @@ export default {
         await createPost(newPost);
         this.fetchPosts(); // 再度ポストを取得する
       } catch (error) {
-        console.error('There was an error!', error);
+        console.error('There was an error', error);
       }
     },
   },
