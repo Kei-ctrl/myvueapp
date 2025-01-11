@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>Attraction Swiper</h1>
+      <h1>Attraction Swipe</h1>
     </header>
     <SwiperComponent :attractions="attractions" @swipe="handleSwipe" />
     <button @click="goToTop">Back to Top</button>
