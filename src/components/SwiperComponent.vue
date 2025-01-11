@@ -19,7 +19,7 @@ import TinderCard from 'vue-tinder';
 export default {
   name: 'SwiperComponent',
   components: {
-    TinderCard
+    TinderCards
   },
   props: {
     attractions: Array
