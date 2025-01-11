@@ -7,7 +7,7 @@ module.exports = {
       entry: 'src/main.js', // エントリーポイントを指定
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'My App',
+      title: 'dateplan',
     },
   },
 };
